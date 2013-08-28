@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2013 Lisa Park, Inc. (www.lisa-park.net).
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+
+Contributors:
+   Lisa Park, Inc. (www.lisa-park.net) - initial API and implementation and/or initial documentation
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.maven.archetype</groupId>
+    <artifactId>maven-archetype</artifactId>
+    <version>2.2</version>
+  </parent>
+
+  <artifactId>archetype-models</artifactId>
+  <packaging>pom</packaging>
+
+  <name>Maven Archetype Models</name>
+  <description>Core Archetype Models.</description>
+
+  <modules>
+    <module>archetype-catalog</module>
+    <module>archetype-descriptor</module>
+    <module>archetype-registry</module>
+  </modules>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.modello</groupId>
+          <artifactId>modello-maven-plugin</artifactId>
+          <configuration>
+            <version>1.0.0</version>
+          </configuration>
+          <executions>
+            <execution>
+              <id>default</id>
+              <goals>
+                <goal>java</goal>
+                <goal>xpp3-reader</goal>
+                <goal>xpp3-writer</goal>
+                <goal>xsd</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>site-docs</id>
+              <phase>pre-site</phase>
+              <goals>
+                <goal>xdoc</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>site-xsd</id>
+              <phase>pre-site</phase>
+              <goals>
+                <goal>xsd</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${basedir}/target/generated-site/resources/xsd</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

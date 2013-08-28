@@ -1,0 +1,33 @@
+
+<!--
+Copyright (c) 2013 Lisa Park, Inc. (www.lisa-park.net).
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+
+Contributors:
+   Lisa Park, Inc. (www.lisa-park.net) - initial API and implementation and/or initial documentation
+-->
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.db4o</groupId>
+  <artifactId>db4o-core-java5</artifactId>
+  <version>8.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>db4o core java 5</name>
+  <description>db4o database engine core for JDK 5 and JDK 6</description>
+  <url>http://www.db4o.com</url>  
+  <licenses>
+    <license>
+      <name>GNU General Public License</name>
+      <url>http://www.db4o.com/about/company/legalpolicies/gpl.aspx</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  
+  <scm>
+    <url>https://source.db4o.com/db4o/trunk</url>
+  </scm>
+
+</project>

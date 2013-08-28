@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2013 Lisa Park, Inc. (www.lisa-park.net).
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+
+Contributors:
+   Lisa Park, Inc. (www.lisa-park.net) - initial API and implementation and/or initial documentation
+-->
+
+<metadata>
+  <groupId>com.jidesoft</groupId>
+  <artifactId>jide-action</artifactId>
+  <version>3.3.6</version>
+  <versioning>
+    <versions>
+      <version>3.3.6</version>
+    </versions>
+    <lastUpdated>20120307075217</lastUpdated>
+  </versioning>
+</metadata>
